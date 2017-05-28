@@ -1,0 +1,82 @@
+include devrecipe.html
+
+<!DOCTYPE html>
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(property="og:title" content="Devrecipe")
+    meta(property="og:url" content="https://www.devrecipe.com")
+    meta(property="og:image" content="https://www.devrecipe.com/images/thumbnail.jpg")
+    meta(property="og:description" content="Devrecipe is a creative IT company helping startups and developers build their products, founded in 2017 and based in Tozeur, Tunisia.")
+    meta(property="og:site_name" content="Devrecipe")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css")
+    link(rel="stylesheet", href="/css/style.css")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js")
+    script(src="/js/script.js")
+    title Devrecipe
+body
+    nav.animated.fadeInDown
+        .container
+            a(href="/")
+                img(src="/images/logo-white.png", alt="").logo
+            ul.menu
+                li
+                    a(href="#recipes") Recipes
+                    a(href="#stories") Stories
+                    a(href="#contact") Contact
+    header
+        .background
+            .overlay
+            video(src="/images/background.mp4", playsinline, autoplay, muted, loop)
+        .container.jumbotron.header-text.text-center
+                h2 Our Mission
+                h1
+                    | We make recipes for <span class="typed"></span>,
+                    br
+                    | So they can make tasty products.
+        .scroll-down.animated.bounce.infinite
+            img(src="/images/scroll-down.png", alt="")
+    .container-fluid
+        .row
+            .col-md-6
+                #recipes.text-center
+                    .jumbotron
+                        h1 Recipes
+                        h2 Coming Soon
+            .col-md-6
+                #stories.text-center
+                    .jumbotron
+                        h1 Stories
+                        h2 Coming Soon
+    .container
+        #contact
+            .jumbotron
+                h1.text-center Get in touch
+                .row
+                    .col-md-6
+                        h2 Address
+                        h4 Office 6, Cyberparc, El Hemma Street, Tozeur, Tunisia.
+                    .col-md-3
+                        h2 Phone
+                        h4 +216 28 657 882
+                    .col-md-3
+                        h2 Email
+                        h4 hello@devrecipe.com
+    #map
+    footer
+        .footer
+            .container
+                .row
+                    .col-md-6.col-md-offset-3.text-center
+                        img(src="/images/logo-footer.png", alt="").animated.pulse.infinite
+                        h4 Devrecipe is a creative IT company helping startups and developers, founded in 2017 and based in Tozeur, Tunisia.
+                        p
+                            small &copy; 2017 Devrecipe, All rights reserved.
+                        a(href="/privacy") Privacy Policy
+    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBImJlJF5sAYOFlfxq2ogsrrdAgsTWGbnA&callback=initMap", async, defer)
+    include intercom.html

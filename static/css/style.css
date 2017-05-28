@@ -1,0 +1,183 @@
+/* ACCENT #2ecc71 */
+/* dark 1 #02020b */
+/* dark 2 #4f5d75 */
+
+@font-face {
+    font-family: 'Circular';
+    src: url('/fonts/circular.otf') format("opentype");
+}
+
+::selection {
+  background: #4f5d75;
+}
+
+body {
+    font-family: 'Circular';
+    color: #4f5d75;
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    z-index: 1000;
+    height: 80px;
+    width: 100%;
+    margin-top: 20px;
+    transition: .5s all ease-in-out;
+}
+
+nav .menu {
+    float: right;
+    margin: 0px;
+    line-height: 80px;
+    text-align: right;
+}
+
+nav .menu li {
+    display: inline;
+}
+
+nav .menu li a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 15px;
+}
+
+nav.scrolling {
+    background: white;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+    margin-top: 0px;
+}
+
+nav.scrolling .menu li a {
+    color: #2ecc71;
+}
+
+.jumbotron {
+    background: none;
+}
+
+.logo {
+    height: 45px;
+    margin: 15px 0px;
+}
+
+html, body, header {
+    height: 100%;
+}
+
+.background {
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.background .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.background video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.header-text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    animation-duration: 4s;
+}
+
+.header-text h2 {
+    color: white;
+}
+
+.header-text h1 {
+    color: #2ecc71;
+    line-height: 1.5em;
+}
+
+.scroll-down {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 30px;
+    animation-duration: 2s;
+}
+
+.scroll-down img {
+    height: 60px;
+}
+
+#recipes, #stories, #contact {
+    background: white;
+}
+
+footer {
+    overflow: hidden;
+}
+
+.footer {
+    position: relative;
+    width: 100vw;
+    background: #02020b;
+    border-top: 1px solid #02020b;
+    margin-top: 20px;
+    color: #4f5d75;
+}
+
+.footer:before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    left: 0;
+    top: -20px;
+    border-bottom: 20px solid #02020b;
+    border-right: 100vw solid rgba(255, 255, 255, 0);
+}
+
+.footer .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer img {
+    width: 200px;
+    margin-bottom: 25px;
+}
+
+.footer h4 {
+    line-height: 1.5em;
+}
+
+.footer a {
+    color: white;
+}
+
+#contact h1 {
+    margin-bottom: 50px;
+}
+
+#map {
+    height: 400px;
+    position: relative;
+    top: 35px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        position: absolute;
+        height: 36px;
+        margin: 22px 0px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+}
