@@ -1,5 +1,5 @@
 function handleNavbar() {
-    if ($(window).scrollTop() > 200) {
+    if ($(window).scrollTop() > 100) {
         $('nav').addClass('scrolling')
         $(".logo").attr('src', '/images/logo-color.png')
     } else {

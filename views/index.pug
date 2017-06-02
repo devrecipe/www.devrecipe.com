@@ -30,6 +30,7 @@ body
                     a(href="#recipes") Recipes
                     a(href="#stories") Stories
                     a(href="#spicies") Spicies
+                    a(href="#chefs") Chefs
                     a(href="#contact") Contact
     header
         .background
@@ -45,25 +46,40 @@ body
             img(src="/images/scroll-down.png", alt="")
     .container
         .row
-            .col-md-4
-                #recipes
+            .col-md-6
+                #recipes.text-center
                     .jumbotron
                         h1 Recipes
                         h2 Coming Soon
-            .col-md-4
-                #stories
+            .col-md-6
+                #stories.text-center
                     .jumbotron
                         h1 Stories
                         h2 Coming Soon
-            .col-md-4
-                #spicies
-                    .jumbotron
-                        h1 Spicies
-                        h2 Coming Soon
+    #spicies
+        .overlay
+        .container
+            .jumbotron.text-center
+                h1 Learning Spicies
+                p We've setup a studio to bring to you delicious trainings on latest technologies
+                button.btn Jumpstart to Docker, from zero to hero
+    #chefs
+        .container
+            .jumbotron.text-center
+                h1 The Chef Mates
+                .row
+                    .col-md-6.text-center
+                        img(src="/images/anas.jpg", alt="Mohamed Anas ben Othman")
+                        h4 Mohamed Anas Ben Othman
+                        h5 Founder &amp; CEO
+                    .col-md-6.text-center
+                        img(src="/images/wassim.jpg", alt="Wassim Rekik")
+                        h4 Wassim Rekik
+                        h5 iOS &amp; Android Developer
     .container
         #contact
             .jumbotron
-                h1 Get in touch
+                h1.text-center Get in touch
                 .row
                     .col-md-6
                         h2 Address
