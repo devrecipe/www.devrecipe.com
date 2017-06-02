@@ -12,10 +12,10 @@ function initMap() {
     var location = {lat: 33.939346, lng: 8.143851}
 
     var map = new google.maps.Map(document.getElementById('map'), {
-        center: location,
+        center: {lat: 33.9290000, lng: 8.1309572},
         scrollwheel: false,
         disableDefaultUI: true,
-        zoom: 13,
+        zoom: 14,
         styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
             {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
@@ -65,9 +65,15 @@ $(document).ready(function() {
     Typed.new('.typed', {
         strings: ['developers', 'startups', 'IT companies'],
         type: 'html',
-        typeSpeed: 40,
+        typeSpeed: 60,
         showCursor: false,
         loop: true,
         backDelay: 3000
     })
+
+    var counter = Math.floor(Date.now() / 1000) - 1487548800
+    setInterval(function() {
+        counter++
+        $('.stopwatch').text(`${counter} seconds passed since Devrecipe was born.`)
+    }, 1000)
 })

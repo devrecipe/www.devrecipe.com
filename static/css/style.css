@@ -67,6 +67,9 @@ html, body, header {
 }
 
 .background {
+    background: url('/images/background.jpg');
+    background-size: cover;
+    background-position: center;
     position: absolute;
     overflow: hidden;
     height: 100%;
@@ -178,6 +181,25 @@ footer {
     }
 
     .footer {
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav .menu {
+        display: none;
+    }
+
+    .logo {
+        position: relative;
+        height: 48px;
+    }
+
+    nav {
         text-align: center;
     }
 }
