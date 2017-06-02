@@ -14,8 +14,12 @@ app.all('/', (req, res) => {
     res.render('index')
 })
 
-app.all('/privacy', (req, res) => {
+app.all('/privacy-policy', (req, res) => {
     res.render('privacy')
+})
+
+app.all('/terms-of-services', (req, res) => {
+    res.render('terms-services')
 })
 
 app.all('/*', (req, res) => {
