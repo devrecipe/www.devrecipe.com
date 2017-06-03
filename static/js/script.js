@@ -74,6 +74,6 @@ $(document).ready(function() {
     var counter = Math.floor(Date.now() / 1000) - 1487548800
     setInterval(function() {
         counter++
-        $('.stopwatch').text(`${counter} seconds passed since Devrecipe was born.`)
+        $('.stopwatch').text(`${counter} heart beats since Devrecipe was born.`)
     }, 1000)
 })

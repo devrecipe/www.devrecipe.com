@@ -183,7 +183,7 @@ footer {
     margin-bottom: 25px;
 }
 
-.row .col-md-6 {
+.row .col-md-6, .row .col-md-3 {
     margin-top: 25px;
 }
 
