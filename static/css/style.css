@@ -191,11 +191,12 @@ footer {
     margin-bottom: 50px;
 }
 
-#chefs .row .col-md-6 img {
+#chefs .row img {
     height: 200px;
     width: 200px;
     border-radius: 100px;
     margin-bottom: 25px;
+    margin-top: 25px;
 }
 
 #spicies .btn {
